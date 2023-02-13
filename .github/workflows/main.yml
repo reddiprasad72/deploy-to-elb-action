@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to ELB
-        uses: chriscohoat/deploy-to-elb-action@master
+        uses: bluboy/backend-api@github-actions
         with:
           script: /home/ubuntu/deploy_ci.sh
           autoscaling_group_name: ${{ secrets.AUTOSCALING_GROUP_NAME }}
