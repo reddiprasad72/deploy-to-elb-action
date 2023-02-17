@@ -14,7 +14,7 @@ jobs:
         uses:  chriscohoat/deploy-to-elb-action@0.0.1
 
         with:
-          script: /home/ubuntu/deploy_ci.sh
+         
           autoscaling_group_name: ${{ secrets.AUTOSCALING_GROUP_NAME }}
           ssh_key: ${{ secrets.SSH_KEY }}
         env:
